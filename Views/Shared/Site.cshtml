@@ -1,0 +1,98 @@
+﻿<!-- Site Section -->
+<section id="site" class="content-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="sectionheader">About This Site</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container text-justify ">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <p class="text-justify">
+                This simple site was created using a variety of tools and techniques in Visual Studio 2015. The site is
+                built on ASP.NET MVC, and uses HTML5, Bootstrap 3x, the Razor programming syntax and a variety of client-side
+                Javascript utilities. The site is fully responsive on just about any device. While this site does
+                not use any database or SharePoint technologies, it does demonstrate the use of some current technologies.
+            </p>
+        </div>
+        <div class="col-lg-8 col-lg-offset-2 container">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">Partial Views</h4>
+                    <p class="list-group-item-text">
+                        The site makes use of partial views throughout, and uses the
+                        &#64;Html.Partial mechanism to render content. All navigation and
+                        content is abstracted from the Index and _Layout views, and these views
+                        contain very little but calls for rendering the partial views.
+                        This helps to ensure a separation of
+                        concerns between the structure and the content.
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">Strongly Typed Partial View</h4>
+                    <p class="list-group-item-text">
+                        The partial view called "contact" is strongly typed to the MailModel class. This ensures that the
+                        view will function properly, but all of the contact functionality is encaptsulated into a
+                        single partial view.
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">AJAX Form Posting</h4>
+                    <p class="list-group-item-text">
+                        The mail message is handled by a custom jQuery post mechanism that collect the form data and
+                        posts it to the appropriate controller action. This site does not rely on any postbacks.
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">Server Side Data Annotations</h4>
+                    <p class="list-group-item-text">
+                        All of the properties in the MailModel make use of System.ComponentModel.DataAnnotation
+                        to ensure that the data entered is valid. This includes annotations for data types and
+                        requirements.
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">HTML Helper Methods</h4>
+                    <p class="list-group-item-text">
+                        The email modal dialog makes use of HTML Helper Methods for form and form field creation
+                        and validation, as well as anti-forgery token and client side validation.
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">Customized CSS File</h4>
+                    <p class="list-group-item-text">
+                        The file called "grayscale.css" is a customized version of Boostrap 3.x created and downloaded from the
+                        Bootstrap site. While I do not take credit for the look and feel of this site (I used an HTML template to start),
+                        I did modify the code and CSS considerably to create the end product.
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">Font Awesome Glyphicons</h4>
+                    <p class="list-group-item-text">
+                        This site makes use of Font Awesome glyphicons wherever appropriate.
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">Script and Content Bundling</h4>
+                    <p class="list-group-item-text">
+                        Most of the CSS and scripts loaded into this site are references in the BundleConfig file
+                        in order to be bundled and rendered in a more efficient manner. Calls to external links
+                        for Google fonts and scripts to help older browsers are not bundled, as they are obtained from a
+                        CDN location.
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <h4 class="list-group-item-heading">See for yourself!</h4>
+                    <p class="list-group-item-text">
+                        The project is available for you to download from my Github repository. <a href="https://github.com/SharePointSean/sharepointseansite" target="_blank">Check it out here</a>
+
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
